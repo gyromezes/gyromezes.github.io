@@ -1,0 +1,1015 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Gyromezes | Authentic Greek & Cypriot Street Food in Paphos</title>
+  <meta name="description" content="Gyromezes at 61 Griva Digeni, 8201 Geroskipou, Paphos. Authentic Greek & Cypriot street food, premium gyros, grill, souvlaki, sheftalia, lamb gyros, takeaway and direct pickup orders." />
+  <meta name="theme-color" content="#090909" />
+  <meta property="og:title" content="Gyromezes | Greek & Cypriot Street Food" />
+  <meta property="og:description" content="Premium gyros, grilled meats and authentic Cypriot flavors at 61 Griva Digeni, Geroskipou. Call direct for pickup." />
+  <meta property="og:image" content="assets/hero.webp" />
+  <style>
+    :root {
+      --bg:#070707; --panel:#111; --panel2:#171717; --text:#fff; --muted:#aaa; --muted2:#777;
+      --red:#e50914; --red2:#ff2630; --line:rgba(255,255,255,.12); --soft:rgba(255,255,255,.06);
+      --radius:26px; --shadow:0 22px 60px rgba(0,0,0,.55);
+    }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--bg); color:var(--text); font-family:Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    body::before { content:""; position:fixed; inset:0; pointer-events:none; z-index:-2; background:
+      radial-gradient(circle at 20% 0%, rgba(229,9,20,.24), transparent 28%),
+      radial-gradient(circle at 90% 18%, rgba(255,255,255,.07), transparent 24%),
+      linear-gradient(180deg,#050505,#0d0d0d 42%,#070707);
+    }
+    body::after { content:""; position:fixed; inset:0; pointer-events:none; z-index:-1; opacity:.10; background-image:linear-gradient(rgba(255,255,255,.10) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.07) 1px, transparent 1px); background-size:44px 44px; }
+    a { color:inherit; text-decoration:none; }
+    img { display:block; max-width:100%; }
+    .wrap { width:min(1120px,100%); margin:0 auto; padding:0 16px; }
+    .topbar { position:sticky; top:0; z-index:50; border-bottom:1px solid var(--line); background:rgba(0,0,0,.82); backdrop-filter:blur(18px); }
+    .topbar-inner { display:flex; align-items:center; justify-content:space-between; min-height:62px; gap:14px; }
+    .brand { display:flex; align-items:center; gap:12px; min-width:0; }
+    .brand-logo { width:44px; height:44px; border-radius:14px; overflow:hidden; border:1px solid rgba(229,9,20,.40); background:#050505; flex:0 0 auto; box-shadow:0 12px 30px rgba(229,9,20,.15); }
+    .brand-logo img { width:100%; height:100%; object-fit:cover; object-position:center; }
+    .brand-title { font-weight:950; letter-spacing:.02em; font-size:18px; line-height:1; }
+    .brand-sub { margin-top:4px; color:#ff535b; font-size:9px; font-weight:850; letter-spacing:.22em; text-transform:uppercase; white-space:nowrap; }
+    .desktop-nav { display:none; gap:18px; align-items:center; font-size:13px; font-weight:850; color:#ddd; }
+    .btn { min-height:54px; display:inline-flex; align-items:center; justify-content:center; gap:9px; border-radius:18px; padding:14px 18px; font-weight:950; text-transform:uppercase; letter-spacing:.04em; font-size:13px; border:1px solid transparent; transition:transform .15s ease, background .15s ease, border-color .15s ease; cursor:pointer; }
+    .btn:active { transform:scale(.98); }
+    .btn-primary { background:linear-gradient(180deg,var(--red2),var(--red)); color:#fff; box-shadow:0 18px 40px rgba(229,9,20,.32); }
+    .btn-secondary { background:rgba(255,255,255,.08); border-color:var(--line); color:#fff; }
+    .btn-small { min-height:44px; padding:10px 14px; font-size:12px; border-radius:999px; }
+
+    .hero { padding:14px 0 12px; }
+    .hero-card { overflow:hidden; border-radius:30px; border:1px solid var(--line); background:#080808; box-shadow:var(--shadow); }
+    .hero-brand-strip { display:flex; align-items:center; justify-content:center; padding:12px 18px 10px; background:linear-gradient(180deg,#050505,#101010 72%,#070707); border-bottom:1px solid rgba(255,255,255,.10); text-align:center; }
+    .hero-brand-strip img { width:min(84vw,460px); max-height:118px; object-fit:contain; margin:0 auto; border-radius:0; box-shadow:none; }
+    .hero-visual { min-height:470px; position:relative; background-image:linear-gradient(to bottom, rgba(0,0,0,.08), rgba(0,0,0,.32) 34%, rgba(0,0,0,.94) 100%), url('assets/hero.webp'); background-size:cover; background-position:66% center; }
+    .hero-content { position:absolute; inset:auto 0 0; padding:20px; text-align:center; }
+    .eyebrow { color:#ff555d; text-transform:uppercase; letter-spacing:.24em; font-size:11px; font-weight:950; }
+    h1 { margin:12px 0 0; font-size:clamp(42px,12.5vw,82px); line-height:.86; letter-spacing:-.07em; text-transform:uppercase; font-weight:1000; }
+    .red { color:var(--red2); }
+    .hero p { max-width:620px; margin:16px auto 0; color:#d7d7d7; line-height:1.65; font-size:15px; }
+    .phone-pill { margin:16px auto 0; width:max-content; max-width:100%; display:flex; align-items:center; justify-content:center; border-radius:18px; padding:12px 18px; background:rgba(0,0,0,.74); border:1px solid rgba(229,9,20,.38); font-size:25px; font-weight:1000; box-shadow:0 18px 45px rgba(0,0,0,.35); }
+    .hero-actions { padding:14px; display:grid; gap:10px; background:#090909; }
+    .hero-actions .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+    .direct-note { margin:0 14px 14px; padding:14px; border:1px solid rgba(229,9,20,.22); background:rgba(229,9,20,.10); border-radius:20px; text-align:center; color:#d5d5d5; font-size:13px; line-height:1.55; }
+
+    
+    .order-quick { padding:10px 0 24px; }
+    .order-panel { border:1px solid rgba(229,9,20,.24); background:linear-gradient(180deg,rgba(229,9,20,.16),rgba(255,255,255,.045)); border-radius:28px; padding:16px; box-shadow:0 22px 55px rgba(0,0,0,.34); }
+    .order-grid { display:grid; gap:10px; grid-template-columns:1fr; margin-top:12px; }
+    .order-step { display:flex; gap:12px; align-items:flex-start; border:1px solid rgba(255,255,255,.10); background:rgba(0,0,0,.28); border-radius:20px; padding:13px; }
+    .order-num { width:28px; height:28px; border-radius:999px; display:flex; align-items:center; justify-content:center; background:var(--red); color:#fff; font-weight:1000; flex:0 0 auto; }
+    .order-step strong { display:block; font-size:14px; text-transform:uppercase; letter-spacing:.04em; }
+    .order-step span { display:block; margin-top:3px; color:#a7a7a7; font-size:12px; line-height:1.45; }
+
+    .stats { padding:12px 0 20px; }
+    .stats-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; }
+    .stat { padding:16px; border-radius:22px; background:rgba(255,255,255,.055); border:1px solid var(--line); }
+    .stat strong { display:block; font-size:22px; font-weight:1000; }
+    .stat span { color:var(--muted2); font-size:12px; }
+
+    section { scroll-margin-top:86px; }
+    .section { padding:42px 0; }
+    .section-title { margin:8px 0 0; font-size:clamp(34px,9vw,62px); line-height:.9; letter-spacing:-.05em; text-transform:uppercase; font-weight:1000; }
+    .section-copy { color:var(--muted); line-height:1.7; max-width:720px; font-size:15px; }
+
+    .signature-scroll { display:flex; gap:14px; overflow-x:auto; padding:18px 16px 4px; margin:0 -16px; scroll-snap-type:x mandatory; }
+    .sig-card { flex:0 0 min(84vw,330px); scroll-snap-align:start; border:1px solid var(--line); border-radius:28px; background:linear-gradient(180deg,rgba(255,255,255,.075),rgba(255,255,255,.035)); overflow:hidden; box-shadow:0 18px 45px rgba(0,0,0,.32); }
+    .sig-art { position:relative; height:214px; overflow:hidden; background:#0d0d0d; }
+    .sig-art img { width:100%; height:100%; object-fit:cover; }
+    .sig-art::after { content:''; position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,.72), rgba(0,0,0,.08) 52%, rgba(0,0,0,.10)); }
+    .sig-name-badge { position:absolute; left:14px; bottom:14px; z-index:1; border-radius:999px; padding:8px 11px; background:rgba(0,0,0,.62); border:1px solid rgba(255,255,255,.12); color:#fff; font-size:11px; font-weight:950; letter-spacing:.08em; text-transform:uppercase; }
+    .sig-body { padding:18px; }
+    .price-tag { display:inline-flex; border-radius:999px; background:rgba(229,9,20,.16); color:#ff7379; padding:7px 10px; font-size:11px; font-weight:950; text-transform:uppercase; letter-spacing:.08em; }
+    .sig-body h3 { margin:12px 0 0; font-size:24px; line-height:.95; text-transform:uppercase; font-weight:1000; }
+    .sig-body p { color:#aaa; font-size:13px; line-height:1.6; margin:8px 0 0; }
+
+    .menu-section { background:rgba(12,12,12,.86); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+    .menu-tabs-wrap { position:sticky; top:62px; z-index:40; margin:20px -16px 0; padding:10px 16px; background:rgba(0,0,0,.94); border-top:1px solid var(--line); border-bottom:1px solid var(--line); backdrop-filter:blur(18px); }
+    .tap { color:#777; font-size:10px; text-transform:uppercase; letter-spacing:.23em; font-weight:900; margin:0 0 8px; }
+    .menu-tabs { display:flex; gap:8px; overflow-x:auto; padding-bottom:2px; }
+    .tab { flex:0 0 auto; border:0; border-radius:16px; padding:12px 15px; color:#ddd; background:rgba(255,255,255,.08); font-size:12px; font-weight:950; text-transform:uppercase; white-space:nowrap; }
+    .tab.active { background:var(--red); color:#fff; box-shadow:0 14px 30px rgba(229,9,20,.24); }
+    .category-head { margin-top:16px; padding:16px; border-radius:22px; background:rgba(229,9,20,.09); border:1px solid rgba(229,9,20,.24); }
+    .category-head h3 { margin:0; font-size:21px; text-transform:uppercase; font-weight:1000; }
+    .category-head p { margin:6px 0 0; color:#9d9d9d; line-height:1.45; font-size:12px; }
+    .menu-list { display:grid; gap:10px; margin-top:12px; }
+    .item { border:1px solid var(--line); background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.032)); border-radius:22px; padding:15px; }
+    .item-top { display:flex; justify-content:space-between; align-items:flex-start; gap:12px; }
+    .item h4 { margin:0; font-size:16px; font-weight:950; }
+    .item-price { flex:0 0 auto; border-radius:999px; background:rgba(229,9,20,.16); color:#ff7379; padding:7px 10px; font-size:12px; font-weight:950; max-width:46%; text-align:right; }
+    .item-desc { margin:7px 0 0; color:#aaa; line-height:1.55; font-size:13px; }
+    .item-notes { margin:7px 0 0; color:#777; line-height:1.5; font-size:12px; }
+
+    .direct-card { border-radius:32px; background:radial-gradient(circle at 50% 0%, rgba(229,9,20,.24), transparent 34%), linear-gradient(180deg,#171717,#070707); border:1px solid rgba(229,9,20,.25); padding:22px; box-shadow:var(--shadow); }
+    .delivery-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-top:12px; }
+    .delivery-grid .btn { padding:11px 8px; min-height:48px; font-size:11px; }
+
+    .location-card { overflow:hidden; border-radius:32px; border:1px solid var(--line); background:#111; box-shadow:var(--shadow); }
+    .storefront { height:250px; width:100%; object-fit:cover; }
+    .location-body { padding:18px; text-align:center; }
+    .footer { padding:34px 0 110px; border-top:1px solid var(--line); text-align:center; }
+    .footer-logo { width:min(78vw,260px); margin:0 auto 12px; border-radius:0; overflow:hidden; border:0; }
+    .footer p { color:#777; line-height:1.6; font-size:13px; }
+    .mobile-sticky { position:fixed; left:0; right:0; bottom:0; z-index:70; padding:10px 12px calc(10px + env(safe-area-inset-bottom)); background:rgba(0,0,0,.94); border-top:1px solid var(--line); backdrop-filter:blur(18px); }
+    .mobile-sticky-inner { display:grid; grid-template-columns:1.18fr .91fr .91fr; gap:8px; max-width:520px; margin:0 auto; }
+    .mobile-sticky .btn { min-height:50px; padding:10px 8px; font-size:12px; }
+
+    @media (min-width:760px) {
+      .wrap { padding:0 28px; }
+      .desktop-nav { display:flex; }
+      .hero { padding:28px 0 22px; }
+      .hero-visual { min-height:610px; background-position:center; }
+      .hero-brand-strip { padding:18px 18px 14px; }
+      .hero-actions { grid-template-columns:1.2fr 1fr; align-items:center; }
+      .hero-actions .grid2 { grid-template-columns:1fr 1fr; }
+      .stats-grid { grid-template-columns:repeat(4,1fr); }
+      .signature-scroll { display:grid; grid-template-columns:repeat(2,1fr); overflow:visible; padding:24px 0 0; margin:0; }
+      .order-grid { grid-template-columns:repeat(3,1fr); }
+      .sig-card { flex:auto; }
+      .menu-list { grid-template-columns:repeat(2,1fr); }
+      .location-grid { display:grid; grid-template-columns:1fr 1fr; gap:22px; align-items:stretch; }
+      .mobile-sticky { display:none; }
+      .footer { padding-bottom:40px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="mobile-sticky">
+    <div class="mobile-sticky-inner">
+      <a class="btn btn-primary" href="tel:+35726960929">📞 Call</a>
+      <a class="btn btn-secondary" href="#menu">Menu</a>
+      <a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=Gyromezes%2061%20Griva%20Digeni%208201%20Geroskipou%20Cyprus" target="_blank" rel="noreferrer">Map</a>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#top" aria-label="Gyromezes home">
+        <div class="brand-logo"><img src="assets/logo-icon.webp" alt="Gyromezes icon" /></div>
+        <div>
+          <div class="brand-title">GYROMEZES</div>
+          <div class="brand-sub">Only Meat. Only The Best.</div>
+        </div>
+      </a>
+      <nav class="desktop-nav">
+        <a href="#signature">Signature</a>
+        <a href="#menu">Menu</a>
+        <a href="#location">Location</a>
+        <a class="btn btn-primary btn-small" href="tel:+35726960929">Call & Order</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-card">
+          <div class="hero-brand-strip">
+            <img src="assets/logo-wide.webp" alt="Gyromezes logo" />
+          </div>
+          <div class="hero-visual">
+            <div class="hero-content">
+              <div class="eyebrow">Authentic Greek & Cypriot Street Food</div>
+              <h1>Fresh Grill.<br><span class="red">Direct Pickup.</span><br>Real Gyros.</h1>
+              <p>Premium gyros, souvlaki, sheftalia, lamb gyros and Cypriot grill classics at 61 Griva Digeni, Geroskipou.</p>
+              <a class="phone-pill" href="tel:+35726960929">📞 26 960 929</a>
+            </div>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+35726960929">📞 Call & Order Direct</a>
+            <div class="grid2">
+              <a class="btn btn-secondary" href="#menu">View Menu</a>
+              <a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=Gyromezes%2061%20Griva%20Digeni%208201%20Geroskipou%20Cyprus" target="_blank" rel="noreferrer">Directions</a>
+            </div>
+          </div>
+          <div class="direct-note">Best for pickup: call the restaurant directly, order fresh from the grill, and avoid waiting on apps.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="wrap stats-grid">
+        <div class="stat"><strong>Direct</strong><span>Pickup first</span></div>
+        <div class="stat"><strong>Lamb</strong><span>Premium gyros</span></div>
+        <div class="stat"><strong>Grill</strong><span>Fresh meats</span></div>
+        <div class="stat"><strong>Paphos</strong><span>Local spot</span></div>
+      </div>
+    </section>
+
+    <section class="order-quick">
+      <div class="wrap">
+        <div class="order-panel">
+          <div class="eyebrow">Best way to order</div>
+          <h2 class="section-title" style="font-size:34px">Call direct. Pick up hot.</h2>
+          <div class="order-grid">
+            <div class="order-step"><div class="order-num">1</div><div><strong>Call</strong><span>Tell us what you want, fast and simple.</span></div></div>
+            <div class="order-step"><div class="order-num">2</div><div><strong>We grill</strong><span>Your food is prepared fresh for pickup.</span></div></div>
+            <div class="order-step"><div class="order-num">3</div><div><strong>Collect</strong><span>Skip app delays and keep it direct.</span></div></div>
+          </div>
+          <a class="btn btn-primary" href="tel:+35726960929" style="width:100%; margin-top:14px">📞 Call 26 960 929</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="signature" class="section">
+      <div class="wrap">
+        <div class="eyebrow">Signature cravings</div>
+        <h2 class="section-title">The first things to try.</h2>
+        <p class="section-copy">A short selection of the most representative Gyromezes cravings — the full menu is below.</p>
+        <div class="signature-scroll" id="signatureCards"></div>
+      </div>
+    </section>
+
+    <section id="menu" class="section menu-section">
+      <div class="wrap">
+        <div class="eyebrow">Menu</div>
+        <h2 class="section-title">Choose. Call. Pick up.</h2>
+        <p class="section-copy">Prices and availability can change. For the fastest order and best direct experience, call the restaurant.</p>
+        <div class="quick-menu-note">Most people start with <strong>Signature / Best Sellers</strong>, <strong>Pitas & Plates</strong> or <strong>Grill by the Piece</strong>.</div>
+
+        <div class="menu-tabs-wrap">
+          <p class="tap">Tap a category</p>
+          <div class="menu-tabs" id="menuTabs"></div>
+        </div>
+        <div id="menuContent"></div>
+
+        <div style="margin-top:18px" class="direct-card">
+          <div class="eyebrow">Ready to order?</div>
+          <h2 class="section-title" style="font-size:36px">Call direct.</h2>
+          <p class="section-copy">Direct pickup keeps it faster, fresher and closer to the grill.</p>
+          <a class="btn btn-primary" href="tel:+35726960929" style="width:100%; margin-top:12px">📞 Call Gyromezes</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="direct-card">
+          <div class="eyebrow">Direct first</div>
+          <h2 class="section-title">Order direct. Keep it fresh.</h2>
+          <p class="section-copy">Call Gyromezes for pickup and get your food straight from the grill. Delivery apps are available too when you need them.</p>
+          <a class="btn btn-primary" href="tel:+35726960929" style="width:100%; margin-top:12px">Call direct</a>
+          <div class="delivery-grid">
+            <a class="btn btn-secondary" href="https://wolt.com/en/cyp/paphos/restaurant/gyromezes?srsltid=AfmBOooZbo_hN6g-x4wNY9BgZZs4ha9y2JvAMknb8vcxythgNmJQVWrR" target="_blank" rel="noreferrer">Wolt</a>
+            <a class="btn btn-secondary" href="https://www.foody.com.cy/delivery/menu/gyromezes" target="_blank" rel="noreferrer">Foody</a>
+            <a class="btn btn-secondary" href="https://food.bolt.eu/en/444-paphos/p/98937-gyromezes/" target="_blank" rel="noreferrer">Bolt</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="location" class="section">
+      <div class="wrap location-grid">
+        <div>
+          <div class="eyebrow">Find us</div>
+          <h2 class="section-title">61 Griva Digeni, Geroskipou.</h2>
+          <p class="section-copy">Find Gyromezes at 61 Griva Digeni, 8201 Geroskipou. Call ahead and collect fresh from the grill.</p>
+          <div style="display:grid; gap:10px; margin-top:18px">
+            <a class="btn btn-primary" href="tel:+35726960929">📞 26 960 929</a>
+            <a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=Gyromezes%2061%20Griva%20Digeni%208201%20Geroskipou%20Cyprus" target="_blank" rel="noreferrer">📍 Open Google Maps</a>
+            <a class="btn btn-secondary" href="https://www.instagram.com/gyromezes/" target="_blank" rel="noreferrer">Instagram</a>
+            <a class="btn btn-secondary" href="https://www.facebook.com/p/%CE%93%CF%85%CF%81%CE%BF%CE%BC%CE%B5%CE%B6%CE%AD%CF%82-100063497143743/" target="_blank" rel="noreferrer">Facebook</a>
+          </div>
+        </div>
+        <div class="location-card">
+          <img class="storefront" src="assets/storefront.webp" alt="Gyromezes storefront in Yeroskipou" />
+          <div class="location-body">
+            <div style="color:#aaa; font-size:13px">Address</div>
+            <div style="font-size:22px; font-weight:1000; margin-top:4px">61 Griva Digeni, 8201 Geroskipou</div>
+            <div style="color:#777; font-size:13px; line-height:1.55; margin-top:8px">Look for the black Gyromezes sign — easy pickup for takeaway orders.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-logo"><img src="assets/logo-wide.webp" alt="Gyromezes logo" /></div>
+      <div class="brand-title">GYROMEZES</div>
+      <div class="brand-sub" style="margin-top:8px">Only Meat. Only The Best.</div>
+      <p>Authentic Greek & Cypriot street food, premium grill, gyros and takeaway in Paphos.</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuData = [
+  {
+    category: "Signature / Best Sellers",
+    items: [
+      {
+        name: "Gyromezes",
+        description: "A generous signature platter with village salad, pita, sauce, pork gyros, chicken gyros, beef gyros and lamb gyros.",
+        price: "€19.90",
+        notes: "House signature dish."
+      },
+      {
+        name: "Mix Grill",
+        description: "Pork souvlaki, chicken souvlaki, sheftalia, pancetta, shish kebab and grilled halloumi, served with salad, fries, pita and sauce.",
+        price: "€17.90",
+        notes: "Includes 1 pork souvlaki, 1 chicken souvlaki, sheftalia, pancetta, shish kebab and grilled halloumi."
+      },
+      {
+        name: "Pork Lover Box",
+        description: "A pork-focused box with pork souvlaki, sheftalia, shish kebab, pancetta and pork gyros, served with fries, salad, pita and sauce.",
+        price: "€20.90",
+        notes: "Includes 2 pork souvlakia, 2 sheftalia, 1 shish kebab, 1 pancetta and pork gyros."
+      },
+      {
+        name: "Chicken Lover Box",
+        description: "A chicken box with chicken souvlaki, wings, nuggets and chicken gyros, served with fries, salad, pita and sauce.",
+        price: "€20.90",
+        notes: "Includes 2 chicken souvlakia, 4 wings, 4 nuggets and chicken gyros."
+      },
+      {
+        name: "Meze for 2",
+        description: "A generous sharing meze for two with mixed grill pieces, halloumi, lounza, snacks, village salad, fries, pita and sauces.",
+        price: "€39.90",
+        notes: "Includes 2 pork souvlakia, 2 chicken souvlakia, 2 shish kebabs, 2 pancetta, 2 sheftalia, grilled halloumi, lounza, mozzarella sticks, onion rings, village salad, 2 pitas, fries and 3 sauces."
+      }
+    ]
+  },
+  {
+    category: "Pitas & Plates",
+    items: [
+      {
+        name: "Greek Pita",
+        description: "Greek pita with your choice of filling, fresh salad and 2 sauces.",
+        price: "€6.00",
+        notes: "Fries included. Wedges +€1.00. Includes 2 sauces. Mix souvlaki + sheftalia not available in Greek pita."
+      },
+      {
+        name: "Cypriot Pita",
+        description: "Cypriot pita with your choice of filling, fresh salad and 2 sauces.",
+        price: "€7.00",
+        notes: "Fries +€0.50. Wedges +€1.00. Includes 2 sauces."
+      },
+      {
+        name: "Large Cypriot Pita",
+        description: "Large Cypriot pita with your choice of filling, fresh salad and 2 sauces.",
+        price: "€9.50",
+        notes: "Fries +€0.50. Wedges +€1.00. Includes 2 sauces."
+      },
+      {
+        name: "Plate / Portion",
+        description: "A full plate served with salad, pita, fries and 1 sauce.",
+        price: "€13.90",
+        notes: "Wedges +€1.50. Includes 1 sauce."
+      },
+      {
+        name: "Skepasti",
+        description: "Greek-style stuffed pita sandwich with your choice of filling, fries and 2 sauces.",
+        price: "€13.90",
+        notes: "Fries included. Wedges +€1.00. Includes 2 sauces."
+      }
+    ]
+  },
+  {
+    category: "Fillings & Supplements",
+    items: [
+      {
+        name: "Pork Gyros",
+        description: "Authentic pork gyros, sliced fresh and served in your chosen format.",
+        price: "Included",
+        notes: "Available in Greek pita, Cypriot pita, Large Cypriot pita, Plate/Portion and Skepasti."
+      },
+      {
+        name: "Chicken Gyros",
+        description: "Juicy chicken gyros, served in your chosen format.",
+        price: "Included",
+        notes: "Available in Greek pita, Cypriot pita, Large Cypriot pita, Plate/Portion and Skepasti."
+      },
+      {
+        name: "Beef Gyros",
+        description: "Beef gyros served with fresh salad and sauce in your chosen format.",
+        price: "Included",
+        notes: "Available in Greek pita, Cypriot pita, Large Cypriot pita, Plate/Portion and Skepasti."
+      },
+      {
+        name: "Lamb Gyros",
+        description: "Premium lamb gyros with a rich, authentic flavour.",
+        price: "+€1.50 Greek / +€2.00 Cypriot / +€3.00 Large / +€3.50 Plate or Skepasti",
+        notes: "Premium filling."
+      },
+      {
+        name: "Souvlaki",
+        description: "Grilled pork or chicken souvlaki, served in your chosen format.",
+        price: "+€0.50",
+        notes: "Pork or chicken."
+      },
+      {
+        name: "Sheftalia",
+        description: "Traditional Cypriot sheftalia, grilled and served in your chosen format.",
+        price: "+€0.50",
+        notes: "Cypriot specialty."
+      },
+      {
+        name: "Mix Souvlaki + Sheftalia",
+        description: "A mixed filling with souvlaki and sheftalia.",
+        price: "+€1.00",
+        notes: "Not available in Greek pita."
+      },
+      {
+        name: "Shish Kebab",
+        description: "Premium grilled shish kebab served in your chosen format.",
+        price: "+€1.00 Greek / +€2.50 Cypriot / +€3.50 Large, Plate or Skepasti",
+        notes: "Premium grill."
+      },
+      {
+        name: "Pancetta",
+        description: "Grilled pancetta with a rich, smoky flavour, served in your chosen format.",
+        price: "+€1.00 Greek / +€2.50 Cypriot / +€3.50 Large, Plate or Skepasti",
+        notes: "Premium grill."
+      },
+      {
+        name: "Halloumi Filling",
+        description: "Grilled halloumi served as the main vegetarian filling.",
+        price: "+€0.50 Greek / +€1.50 Cypriot / +€2.00 Large, Plate or Skepasti",
+        notes: "Vegetarian."
+      },
+      {
+        name: "Mushrooms Filling",
+        description: "Premium mushroom filling served in your chosen format.",
+        price: "+€1.50 Greek / +€3.00 Cypriot / +€4.50 Large, Plate or Skepasti",
+        notes: "Vegetarian premium."
+      },
+      {
+        name: "Veggie Burger Filling",
+        description: "Veggie burger patty served in your chosen format.",
+        price: "Same price as burger formats",
+        notes: "Available in all formats."
+      }
+    ]
+  },
+  {
+    category: "Grill by the Piece",
+    items: [
+      {
+        name: "Souvlaki",
+        description: "One grilled pork or chicken souvlaki skewer.",
+        price: "€2.80",
+        notes: "Pork or chicken."
+      },
+      {
+        name: "Sheftalia",
+        description: "One traditional Cypriot sheftalia, grilled fresh.",
+        price: "€2.20",
+        notes: ""
+      },
+      {
+        name: "Shish Kebab",
+        description: "One grilled shish kebab piece.",
+        price: "€3.50",
+        notes: "Premium grill."
+      },
+      {
+        name: "Pancetta",
+        description: "One grilled pancetta piece.",
+        price: "€3.00",
+        notes: "Premium grill."
+      },
+      {
+        name: "Grilled Halloumi",
+        description: "One grilled halloumi portion.",
+        price: "€2.80",
+        notes: "Grilled halloumi. Different from fried halloumi and extra halloumi."
+      }
+    ]
+  },
+  {
+    category: "Bowls & Salads",
+    items: [
+      {
+        name: "Village Salad",
+        description: "Fresh village salad with tomato, cucumber, onion, olives and feta.",
+        price: "€6.50",
+        notes: "Includes feta."
+      },
+      {
+        name: "Tuna Salad",
+        description: "Fresh salad topped with tuna.",
+        price: "€7.90",
+        notes: ""
+      },
+      {
+        name: "Gyros Bowl",
+        description: "A fresh bowl with gyros and salad.",
+        price: "€7.90",
+        notes: "No fries and no sauce included."
+      },
+      {
+        name: "Lamb Gyros Bowl",
+        description: "A fresh bowl with premium lamb gyros and salad.",
+        price: "€9.90",
+        notes: "Premium lamb version. No fries and no sauce included."
+      },
+      {
+        name: "Halloumi Salad",
+        description: "Fresh salad topped with halloumi.",
+        price: "€10.90",
+        notes: ""
+      },
+      {
+        name: "Pancetta Salad",
+        description: "Fresh salad topped with grilled pancetta.",
+        price: "€12.90",
+        notes: ""
+      },
+      {
+        name: "Mushrooms Salad",
+        description: "Fresh salad topped with mushrooms.",
+        price: "€12.90",
+        notes: ""
+      }
+    ]
+  },
+  {
+    category: "Burgers & Street Food",
+    items: [
+      {
+        name: "Classic Burger",
+        description: "Classic burger in a bun with your choice of beef, chicken, pork or veggie patty.",
+        price: "€7.50",
+        notes: "Fries +€2.50. Wedges +€3.50. Extras available."
+      },
+      {
+        name: "Burger in Greek Pita",
+        description: "Burger patty served in Greek pita with lettuce, cabbage, onion, tomato and cucumber.",
+        price: "€7.50",
+        notes: "Available with beef, chicken, pork or veggie patty. Extras available."
+      },
+      {
+        name: "Burger in Cypriot Pita",
+        description: "Burger patty served in Cypriot pita with lettuce, cabbage, onion, tomato and cucumber.",
+        price: "€9.90",
+        notes: "Available with beef, chicken, pork or veggie patty. Extras available."
+      },
+      {
+        name: "Burger in Large Cypriot Pita",
+        description: "Burger patty served in large Cypriot pita with lettuce, cabbage, onion, tomato and cucumber.",
+        price: "€12.90",
+        notes: "Available with beef, chicken, pork or veggie patty. Extras available."
+      },
+      {
+        name: "French Tacos",
+        description: "French tacos with gyros, fries and cheddar sauce.",
+        price: "€7.00",
+        notes: "Lamb version €8.50. Extras available."
+      },
+      {
+        name: "Lamb French Tacos",
+        description: "French tacos with premium lamb gyros, fries and cheddar sauce.",
+        price: "€8.50",
+        notes: "Premium lamb version."
+      },
+      {
+        name: "ShakeBox",
+        description: "ShakeBox with fries, meat and sauce.",
+        price: "€6.50",
+        notes: "Lamb version €8.50. Meat choices to confirm if needed."
+      },
+      {
+        name: "Lamb ShakeBox",
+        description: "ShakeBox with fries, premium lamb gyros and sauce.",
+        price: "€8.50",
+        notes: "Premium lamb version."
+      },
+      {
+        name: "Potato Pita Greek",
+        description: "Greek pita filled with fries.",
+        price: "€4.50",
+        notes: "Wedges +€1.00."
+      },
+      {
+        name: "Potato Pita Cypriot",
+        description: "Cypriot pita filled with fries.",
+        price: "€6.00",
+        notes: "Wedges +€1.00."
+      },
+      {
+        name: "Potato Pita Large",
+        description: "Large Cypriot pita filled with fries.",
+        price: "€7.50",
+        notes: "Wedges +€1.00."
+      }
+    ]
+  },
+  {
+    category: "Only Meat / Protein Boxes",
+    items: [
+      {
+        name: "Gyros Meat Box 250g",
+        description: "250g of gyros meat only. Choose chicken, pork, beef or mix.",
+        price: "€7.50",
+        notes: "Only meat."
+      },
+      {
+        name: "Gyros Meat Box 500g",
+        description: "500g of gyros meat only. Choose chicken, pork, beef or mix.",
+        price: "€14.50",
+        notes: "Only meat."
+      },
+      {
+        name: "Lamb Meat Box 250g",
+        description: "250g of premium lamb gyros meat only.",
+        price: "€8.90",
+        notes: "Only meat. Premium lamb."
+      },
+      {
+        name: "Lamb Meat Box 500g",
+        description: "500g of premium lamb gyros meat only.",
+        price: "€17.50",
+        notes: "Only meat. Premium lamb."
+      },
+      {
+        name: "Burger Patty",
+        description: "Burger patty only. Choose beef, chicken, pork or veggie.",
+        price: "€6.00",
+        notes: "Only meat / protein option."
+      },
+      {
+        name: "Feta",
+        description: "A portion of feta cheese.",
+        price: "€3.50",
+        notes: "Separate product. Different from feta as an extra."
+      },
+      {
+        name: "Pita Bread",
+        description: "Extra pita bread. Choose Greek or Cypriot pita.",
+        price: "€1.00",
+        notes: "Greek or Cypriot."
+      }
+    ]
+  },
+  {
+    category: "Snacks & Sides",
+    items: [
+      {
+        name: "Fries",
+        description: "Classic fries.",
+        price: "€3.20",
+        notes: "Large €5.20."
+      },
+      {
+        name: "Large Fries",
+        description: "Large portion of classic fries.",
+        price: "€5.20",
+        notes: ""
+      },
+      {
+        name: "Wedges",
+        description: "Crispy potato wedges.",
+        price: "€4.50",
+        notes: "Large €8.50."
+      },
+      {
+        name: "Large Wedges",
+        description: "Large portion of crispy potato wedges.",
+        price: "€8.50",
+        notes: ""
+      },
+      {
+        name: "Fried Halloumi",
+        description: "Two slices of fried halloumi.",
+        price: "€3.00",
+        notes: "Different from grilled halloumi."
+      },
+      {
+        name: "Chicken Nuggets",
+        description: "Six chicken nuggets.",
+        price: "€4.90",
+        notes: "6 pieces."
+      },
+      {
+        name: "Chicken Wings",
+        description: "Four chicken wings.",
+        price: "€6.90",
+        notes: "4 pieces."
+      },
+      {
+        name: "Onion Rings",
+        description: "Ten crispy onion rings.",
+        price: "€3.90",
+        notes: "10 pieces."
+      },
+      {
+        name: "Mozzarella Sticks",
+        description: "Six mozzarella sticks.",
+        price: "€6.20",
+        notes: "6 pieces."
+      },
+      {
+        name: "Tyro Croquettes",
+        description: "Five cheese croquettes.",
+        price: "€6.90",
+        notes: "5 pieces."
+      },
+      {
+        name: "Snackbox",
+        description: "Snack box with onion rings, mozzarella sticks, nuggets and wings, served with fries.",
+        price: "€13.90",
+        notes: "Includes 5 onion rings, 3 mozzarella sticks, 3 nuggets and 2 wings. Wedges +€1.50."
+      },
+      {
+        name: "Mega Snackbox",
+        description: "Large snack box with onion rings, mozzarella sticks, nuggets, wings, tyro croquettes, halloumi and fries.",
+        price: "€24.90",
+        notes: "Includes 10 onion rings, 5 mozzarella sticks, 5 nuggets, 4 wings, 3 tyro croquettes and 2 halloumi. Wedges +€1.50."
+      },
+      {
+        name: "Kids Menu",
+        description: "Kids meal with nuggets or burger, fries and juice or water.",
+        price: "€5.90",
+        notes: "Choice of nuggets or burger."
+      }
+    ]
+  },
+  {
+    category: "Extras",
+    items: [
+      {
+        name: "Halloumi",
+        description: "Add halloumi to your meal.",
+        price: "+€2.50",
+        notes: ""
+      },
+      {
+        name: "Lounza",
+        description: "Add lounza to your meal.",
+        price: "+€1.80",
+        notes: ""
+      },
+      {
+        name: "Bacon",
+        description: "Add bacon to your meal.",
+        price: "+€1.80",
+        notes: ""
+      },
+      {
+        name: "Cheese",
+        description: "Add cheese to your meal.",
+        price: "+€1.00",
+        notes: ""
+      },
+      {
+        name: "Feta",
+        description: "Add feta to your meal.",
+        price: "+€3.00",
+        notes: "Feta as a separate product is €3.50."
+      },
+      {
+        name: "Extra Meat",
+        description: "Add extra meat to your meal.",
+        price: "+€2.50",
+        notes: "Recommended rule: extra meat mainly for gyros."
+      }
+    ]
+  },
+  {
+    category: "Sauces",
+    items: [
+      {
+        name: "Tzatziki",
+        description: "Homemade tzatziki sauce.",
+        price: "€1.80 normal / €3.50 large",
+        notes: "Sauce sold separately. Some sauces are included depending on the format."
+      },
+      {
+        name: "Garlic Mayo",
+        description: "Garlic mayonnaise sauce.",
+        price: "€1.80 normal / €3.50 large",
+        notes: "Sauce sold separately. Some sauces are included depending on the format."
+      },
+      {
+        name: "Mustard & Mayo",
+        description: "Mustard and mayonnaise sauce.",
+        price: "€1.80 normal / €3.50 large",
+        notes: "Sauce sold separately. Some sauces are included depending on the format."
+      },
+      {
+        name: "Chili",
+        description: "Chili sauce.",
+        price: "€1.80 normal / €3.50 large",
+        notes: "Sauce sold separately. Some sauces are included depending on the format."
+      },
+      {
+        name: "Ketchup",
+        description: "Ketchup sauce.",
+        price: "€1.80 normal / €3.50 large",
+        notes: "Sauce sold separately. Some sauces are included depending on the format."
+      },
+      {
+        name: "Mayonnaise",
+        description: "Mayonnaise sauce.",
+        price: "€1.80 normal / €3.50 large",
+        notes: "Sauce sold separately. Some sauces are included depending on the format."
+      },
+      {
+        name: "Mustard",
+        description: "Mustard sauce.",
+        price: "€1.80 normal / €3.50 large",
+        notes: "Sauce sold separately. Some sauces are included depending on the format."
+      },
+      {
+        name: "Yogurt",
+        description: "Yogurt sauce.",
+        price: "€1.80 normal / €3.50 large",
+        notes: "Sauce sold separately. Some sauces are included depending on the format."
+      },
+      {
+        name: "Tahini",
+        description: "Tahini sauce.",
+        price: "€1.80 normal / €3.50 large",
+        notes: "Sauce sold separately. Some sauces are included depending on the format."
+      },
+      {
+        name: "Tyrokafteri",
+        description: "Spicy cheese sauce.",
+        price: "€1.80 normal / €3.50 large",
+        notes: "Sauce sold separately. Some sauces are included depending on the format."
+      },
+      {
+        name: "BBQ",
+        description: "BBQ sauce.",
+        price: "€1.80 normal / €3.50 large",
+        notes: "Sauce sold separately. Some sauces are included depending on the format."
+      },
+      {
+        name: "Caesar",
+        description: "Caesar sauce.",
+        price: "€1.80 normal / €3.50 large",
+        notes: "Sauce sold separately. Some sauces are included depending on the format."
+      },
+      {
+        name: "Coleslaw",
+        description: "Coleslaw sauce.",
+        price: "€1.80 normal / €3.50 large",
+        notes: "Sauce sold separately. Some sauces are included depending on the format."
+      },
+      {
+        name: "Pickles",
+        description: "Pickles sauce.",
+        price: "€1.80 normal / €3.50 large",
+        notes: "Sauce sold separately. Some sauces are included depending on the format."
+      },
+      {
+        name: "HP Sauce",
+        description: "HP sauce.",
+        price: "€1.80 normal / €3.50 large",
+        notes: "Sauce sold separately. Some sauces are included depending on the format."
+      }
+    ]
+  },
+  {
+    category: "Drinks",
+    items: [
+      {
+        name: "Coca-Cola",
+        description: "Coca-Cola can.",
+        price: "€1.80",
+        notes: ""
+      },
+      {
+        name: "Coca-Cola Zero",
+        description: "Coca-Cola Zero can.",
+        price: "€1.80",
+        notes: ""
+      },
+      {
+        name: "Fanta",
+        description: "Fanta can.",
+        price: "€1.80",
+        notes: ""
+      },
+      {
+        name: "Sprite",
+        description: "Sprite can.",
+        price: "€1.80",
+        notes: ""
+      },
+      {
+        name: "7up Zero",
+        description: "7up Zero can.",
+        price: "€1.80",
+        notes: ""
+      },
+      {
+        name: "Lipton Ice Tea Peach",
+        description: "Lipton peach iced tea.",
+        price: "€2.00",
+        notes: ""
+      },
+      {
+        name: "XIXO",
+        description: "XIXO drink.",
+        price: "€1.50",
+        notes: "Type/flavour not specified."
+      },
+      {
+        name: "HELL",
+        description: "HELL energy drink.",
+        price: "€2.00",
+        notes: ""
+      },
+      {
+        name: "Water",
+        description: "Bottle of water.",
+        price: "€0.90",
+        notes: ""
+      },
+      {
+        name: "Fruit Juice",
+        description: "Fruit juice.",
+        price: "€1.50",
+        notes: "Flavour to confirm if needed."
+      },
+      {
+        name: "Carlsberg 33 cl",
+        description: "Carlsberg beer, 33 cl.",
+        price: "€2.30",
+        notes: "Alcoholic drink."
+      },
+      {
+        name: "Keo 33 cl",
+        description: "Keo beer, 33 cl.",
+        price: "€2.30",
+        notes: "Alcoholic drink."
+      },
+      {
+        name: "Carlsberg Bottle",
+        description: "Carlsberg beer bottle.",
+        price: "€3.30",
+        notes: "Bottle size not specified."
+      },
+      {
+        name: "Keo Bottle",
+        description: "Keo beer bottle.",
+        price: "€3.30",
+        notes: "Bottle size not specified."
+      }
+    ]
+  }
+];
+
+    const signatureProducts = [
+      { name:"Gyromezes", price:"€19.90", reason:"Our house signature platter with gyros, village salad, pita and sauce.", image:"assets/signature-gyromezes.webp", badge:"House signature" },
+      { name:"Lamb Gyros", price:"Premium option", reason:"A strong identity product and one of the most distinctive premium gyros choices.", image:"assets/signature-lamb-gyros.webp", badge:"Premium favorite" },
+      { name:"Mix Grill", price:"€17.90", reason:"A Greek & Cypriot grill selection with several grilled meats and halloumi.", image:"assets/signature-mix-grill.webp", badge:"Best seller" },
+      { name:"ShakeBox", price:"€6.50 / Lamb €8.50", reason:"A modern takeaway street-food box, quick to order and ideal for mobile customers.", image:"assets/signature-shakebox.webp", badge:"Easy takeaway" }
+    ];
+
+    const sigRoot = document.getElementById('signatureCards');
+    sigRoot.innerHTML = signatureProducts.map((p) => `
+      <article class="sig-card">
+        <div class="sig-art">
+          <img src="${p.image}" alt="${p.name}" loading="lazy" />
+          <span class="sig-name-badge">${p.badge}</span>
+        </div>
+        <div class="sig-body">
+          <span class="price-tag">${p.price}</span>
+          <h3>${p.name}</h3>
+          <p>${p.reason}</p>
+        </div>
+      </article>
+    `).join('');
+
+    const tabs = document.getElementById('menuTabs');
+    const content = document.getElementById('menuContent');
+    let active = menuData[0].category;
+
+    function renderTabs() {
+      tabs.innerHTML = menuData.map(section => `<button class="tab ${section.category === active ? 'active' : ''}" data-cat="${section.category}">${section.category}</button>`).join('');
+      document.querySelectorAll('.tab').forEach(btn => btn.addEventListener('click', () => { active = btn.dataset.cat; renderMenu(); renderTabs(); }));
+    }
+
+    function renderMenu() {
+      const section = menuData.find(s => s.category === active) || menuData[0];
+      content.innerHTML = `
+        <div class="category-head">
+          <h3>${section.category}</h3>
+          <p>${section.items.length} items. Scroll cards below, then call directly to order.</p>
+        </div>
+        <div class="menu-list">
+          ${section.items.map(item => `
+            <article class="item">
+              <div class="item-top">
+                <div>
+                  <h4>${item.name}</h4>
+                  <div class="item-desc">${item.description || ''}</div>
+                  ${item.notes ? `<div class="item-notes">${item.notes}</div>` : ''}
+                </div>
+                <div class="item-price">${item.price}</div>
+              </div>
+            </article>
+          `).join('')}
+        </div>
+      `;
+    }
+    renderTabs(); renderMenu();
+  </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+GYROMEZES FINAL WEBSITE
+
+This folder contains the final static website files.
+
+For GitHub Pages:
+1. Open this folder.
+2. Upload the CONTENTS of this folder to GitHub:
+   - index.html
+   - assets folder
+   - README_UPLOAD.txt
+3. Do not upload the ZIP file itself.
+4. Do not upload the parent folder as a folder inside GitHub.
+5. The index.html file must be at the root of the repository.
+
+The site is static HTML/CSS/JS. No build command is needed.

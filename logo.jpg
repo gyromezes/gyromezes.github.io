@@ -1,0 +1,15 @@
+GYROMEZES SITE V5
+
+Static website ready for Netlify.
+
+How to deploy:
+1. Unzip gyromezes_site_v5.zip.
+2. Upload/drag the full folder gyromezes_site_v5 to Netlify.
+3. Do not upload only index.html. Do not upload the zip file directly.
+
+Files:
+- index.html
+- assets/ logo, hero, storefront and signature images
+
+No build command needed.
+Publish directory: root folder containing index.html.
